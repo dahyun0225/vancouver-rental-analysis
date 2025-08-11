@@ -1,20 +1,10 @@
-# clean_rentals.py
-# Student-focused cleaner:
-# - price 600–2500
-# - keep rows if {price, title} exist (city optional)
-# - post_date kept and filtered to last N days (default 60), tz-safe
-# - handles duplicate 'post_date' columns
-# - parses price from price_txt/title/desc
-# - vectorized distance features (skip with --fast)
-# - outputs only student-useful columns
-
 import re
 import argparse
 from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# -------- config --------
+# config 
 PRICE_RE = re.compile(r"\$[\s]*([0-9][0-9,]*)")
 RENAME_MAP = {
     "post_id": "id",
@@ -45,7 +35,7 @@ FINAL_COLS = [
     "url"
 ]
 
-# -------- helpers --------
+# helpers
 def to_num(s): return pd.to_numeric(s, errors="coerce")
 
 def parse_price_from_text(txt: str):
@@ -93,7 +83,7 @@ def coalesce_duplicate_column(df, name):
     df[name] = coalesced
     return df
 
-# -------- main --------
+# main 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--infile",  default="data/rentals_raw.csv")

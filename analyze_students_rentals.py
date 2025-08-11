@@ -1,21 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Rental Analysis + Random Forest:
-- Combined summary CSV
-- Derives nearest_area & distance if missing
-- Random Forest regression to predict price
-- Key plots (hist, price~distance, price~sqft, geo)
-
-Outputs in ./figs:
-  - rental_summary_combined.csv
-  - random_forest_importances.png
-  - rf_predictions_sample.csv
-  - hist_price.png
-  - scatter_price_vs_distance.png
-  - scatter_price_vs_sqft.png
-  - scatter_geo.png
-"""
-
 import os
 import numpy as np
 import pandas as pd

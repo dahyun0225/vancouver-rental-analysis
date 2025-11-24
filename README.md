@@ -146,7 +146,7 @@ python src/analyze_students_rentals.py
 Data Science  
 May, 2025
 
-## 🇰🇷 한국어 버전 README
+## README
 
 ## 개요 
 이 프로젝트는 **밴쿠버 지역의 학생 임대 시장(Student Rental Market)** 을 분석하여,  

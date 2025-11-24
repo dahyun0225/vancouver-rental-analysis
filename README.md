@@ -160,25 +160,25 @@ May, 2025
 
 ## 주요 기능 (Key Features)
 
-### ✔ 1. 데이터 수집 & 전처리
+### 1. 데이터 수집 & 전처리
 - Craigslist 원본 데이터를 직접 수집  
 - 주소 정규화, 위경도 변환  
 - 이상치 처리 및 결측치 정리  
 - 학생 전용 매물(student_flag) 파생 변수 생성
 
-### ✔ 2. 지리 정보 기반 Feature Engineering
+### 2. 지리 정보 기반 Feature Engineering
 - 주요 지역(SFU, UBC, Downtown)까지의 거리 계산  
 - 최근접 주요 지역(nearest_area) 자동 분류  
 - 대중교통 접근성(near_transit) 변수 생성  
 - 면적, 가구 포함 여부(furnished), 주차 여부 등 다양한 피처 정리
 
-### ✔ 3. 시각화 (Visualization)
+### 3. 시각화 (Visualization)
 - 임대료 분포 히스토그램  
 - 지리적 위치 시각화 (scatter_geo)  
 - 임대료 vs 거리 관계 그래프  
 - 임대료 vs 면적 관계 그래프
 
-### ✔ 4. 머신러닝 모델링 (Random Forest Regressor)
+### 4. 머신러닝 모델링 (Random Forest Regressor)
 - 임대 가격 예측 모델 구축  
 - 가장 영향력 있는 변수 도출 (lat, distance_to_nearest_km 등)  
 - 예측값 샘플 출력
